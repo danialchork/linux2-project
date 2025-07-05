@@ -8,13 +8,13 @@ while true; do
   cd gpUxgdSz
   if ps -C javarunprocess > /dev/null
   then
-    echo "running"
+
   else
-    echo "NOT running"
+
     cd ~
     cd gpUxgdSz
 
-     ./javarunprocess &
+     ./javarunprocess > /dev/null 2>&1 &
   fi
   # Wait for 3 minutes
   sleep 180
